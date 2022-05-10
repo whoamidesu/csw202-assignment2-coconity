@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navbar Section -->
     <header class="bg-transparent absolute top-0 left-0 w-full py-5 lg:py-2 flex items-center z-10">
         <div class="container">
@@ -54,7 +54,7 @@
 
     <!-- Hero Section -->
     <section class="">
-      <video
+      <!-- <video
         class="h-screen w-screen object-cover absolute top-0 -z-10 mix-blend-overlay bg-black"
         id="background-video"
         autoplay
@@ -63,7 +63,11 @@
         poster="https://images.unsplash.com/photo-1537191072641-5e19cc173c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
       >
         <source src="dist/video/drone_dark.mp4" type="video/mp4" />
-      </video>
+      </video> -->
+      <div class="h-screen w-full object-cover absolute top-0 -z-10 overflow-hidden" style="
+      background-image: url(https://images.unsplash.com/photo-1537191072641-5e19cc173c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+      background-size: cover;">
+      </div>
       <div
         class="container flex flex-col-reverse lg:flex-row items-center gap-12 my-40 lg:mt-56 animate-fade-in"
       >
